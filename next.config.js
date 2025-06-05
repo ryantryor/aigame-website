@@ -4,6 +4,7 @@ const nextConfig = {
     ignoreDuringBuilds: true,
   },
   images: { unoptimized: true },
+  output: 'export',
   rewrites: () => [
     {
       source: '/crazy-cattle-3d.embed',
