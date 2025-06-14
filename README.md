@@ -1,73 +1,44 @@
-# Welcome to your Lovable project
 
-## Project info
+# 游戏网站项目说明
 
-**URL**: https://lovable.dev/projects/0f8eadd5-687a-4883-84cf-5d0d28f14b53
+## 项目介绍
 
-## How can I edit this code?
+本项目为一个响应式现代游戏聚合网站，基于 React + Vite + TailwindCSS + shadcn/ui 组件库开发。首页展示丰富的各类小游戏，可支持分类、搜索和分页。适用场景如小型游戏平台入口、H5游戏推广、兴趣站点等。
 
-There are several ways of editing your application.
+## 主要功能
 
-**Use Lovable**
+1. 首页支持展示大量不同类型的游戏画面，点击缩略图可跳转至对应游戏页面（仅部分已开通）。
+2. 支持分类聚合，按“Action”, “Puzzle”, “Casual”, “Board”, “Racing”, “Education”等类别快速筛选游戏。
+3. 支持游戏分页，每页显示设定数量，提升大数据下的用户体验。
+4. 项目页面文本全部英文，适合国际化场景。
+5. 支持可扩展的游戏明细页，可通过 `iframe` 插入具体游戏。
+6. 结构清晰，易于未来新增游戏或类型。
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/0f8eadd5-687a-4883-84cf-5d0d28f14b53) and start prompting.
+## 使用方法
 
-Changes made via Lovable will be committed automatically to this repo.
+1. 通过 Lovable 或本地 `npm install && npm run dev` 启动开发环境。
+2. 可在 `src/pages/Index.tsx` 中补充游戏数据，或进行相关UI自定义。
+3. 路由及页面入口已设置好，如需增加新游戏，添加数据并完善路由跳转及对应页面即可。
 
-**Use your preferred IDE**
+## 扩展建议
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+- 可整合 Supabase 实现排行、用户管理和数据交互。
+- 可拆分 Index 页面为多个子组件以提升可维护性。
+- 可对接第三方 SDK 实现广告或激励机制。
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## 技术栈
 
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
+- React 18
+- Vite 5
+- shadcn/ui
 - Tailwind CSS
+- TypeScript
 
-## How can I deploy this project?
+## 部署方式
 
-Simply open [Lovable](https://lovable.dev/projects/0f8eadd5-687a-4883-84cf-5d0d28f14b53) and click on Share -> Publish.
+支持 Lovable 在线一键部署，或自定义托管至 GitHub Pages/Vercel/Netlify。
 
-## Can I connect a custom domain to my Lovable project?
+---
 
-Yes, you can!
+本项目由 Lovable + AI 自动生成，欢迎自由拓展！
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
