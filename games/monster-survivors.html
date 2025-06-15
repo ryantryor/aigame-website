@@ -3,8 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Monster Survivors</title>
+    <meta name="description" content="Play Monster Survivors online - a thrilling survival game where you battle endless waves of monsters. Free to play on Aigame.it.com.">
+    <meta name="keywords" content="Monster Survivors, survival game, online game, free game, monster game, action game">
+    <meta name="author" content="Aigame.it.com">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Monster Survivors - Battle Endless Waves of Monsters | Aigame.it.com">
+    <meta property="og:description" content="Experience the thrilling survival adventure in Monster Survivors, face endless waves of monsters, upgrade your character, and see how long you can survive!">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://aigame.it.com/games/monster-survivors">
+    <title>Monster Survivors - Battle Endless Waves of Monsters | Aigame.it.com</title>
     <link rel="stylesheet" href="../style.css">
+    <link rel="icon" href="../favicon.png" type="image/png">
 </head>
 <body>
     <header>
@@ -18,10 +27,36 @@
         </div>
     </header>
     <main class="container">
-        <h1>Monster Survivors</h1>
-        <div class="game-container">
-            <iframe class="game-iframe" src="https://cloud.onlinegames.io/games/2025/unity/monster-survivors/index-og.html" allowfullscreen width="100%" height="600" frameborder="0" scrolling="no"></iframe>
-        </div>
+        <section class="game-intro">
+            <h1>Monster Survivors</h1>
+            <p class="tagline">Survive endless waves of monsters in this thrilling action-packed adventure!</p>
+        </section>
+        <section class="game-container">
+            <iframe class="game-iframe" src="https://cloud.onlinegames.io/games/2025/unity/monster-survivors/index-og.html" allowfullscreen width="100%" height="600" frameborder="0" scrolling="no" title="Monster Survivors Game"></iframe>
+        </section>
+        <section class="game-details">
+            <h2>About Monster Survivors</h2>
+            <p>Monster Survivors is an intense survival game where you face endless waves of monsters. Test your skills, upgrade your character, and see how long you can survive in this challenging world full of danger and excitement.</p>
+            <h2>How to Play</h2>
+            <p>Use WASD or arrow keys to move your character. Automatically attack nearby monsters and collect experience points to level up. Choose powerful upgrades to enhance your abilities and survive longer against increasingly difficult waves of monsters.</p>
+        </section>
+        <section class="features">
+            <div class="feature-card">
+                <h3>Endless Gameplay</h3>
+                <p>Face wave after wave of monsters with increasing difficulty. How long can you survive?</p>
+            </div>
+            <div class="feature-card">
+                <h3>Character Upgrades</h3>
+                <p>Level up and choose from a variety of upgrades to enhance your character's abilities.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Diverse Monsters</h3>
+                <p>Battle against a wide range of monsters, each with unique behaviors and attack patterns.</p>
+            </div>
+        </section>
+        <section class="cta">
+            <a href="#game-container" class="cta-button">Play Now</a>
+        </section>
     </main>
     <footer>
         <div class="container">
@@ -34,5 +69,14 @@
             <p>&copy; 2025 Aigame.it.com - All rights reserved</p>
         </div>
     </footer>
+    <script>
+        // Smooth scroll to game area
+        document.querySelector('.cta-button').addEventListener('click', function(e) {
+            e.preventDefault();
+            document.querySelector('.game-container').scrollIntoView({ 
+                behavior: 'smooth' 
+            });
+        });
+    </script>
 </body>
 </html> 
