@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore a collection of exciting online games on Aigame.it.com, including action, adventure, strategy, and more.">
+    <meta name="keywords" content="online games, free games, browser games, game portal, action games, adventure games, strategy games">
+    <meta name="author" content="Aigame.it.com">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Game Navigation - Aigame.it.com">
+    <meta property="og:description" content="Explore a collection of exciting online games, including action, adventure, strategy, and more.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://aigame.it.com/navigation.html">
+    <link rel="canonical" href="https://aigame.it.com/navigation.html">
+    <title>Game Navigation - Aigame.it.com</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Reset and base styles from your template */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            line-height: 1.6;
+            color: #333333;
+            background-color: #f5f5f7;
+        }
+        
+        /* Apple-inspired color scheme */
+        :root {
+            --apple-blue: #0071e3;
+            --apple-gray: #86868b;
+            --apple-light-gray: #f5f5f7;
+            --apple-dark: #1d1d1f;
+        }
+        
+        /* Container */
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Header */
+        header {
+            background-color: var(--apple-dark);
+            color: white;
+            padding: 1rem 0;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        
+        /* Main content */
+        main {
+            padding: 2rem 0;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            color: var(--apple-dark);
+            text-align: center;
+        }
+
+        /* Game Grid */
+        .game-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .game-card {
+            background-color: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s, box-shadow 0.3s;
+            text-decoration: none;
+            color: var(--apple-dark);
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .game-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
+        }
+
+        .game-card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-bottom: 1px solid #e5e5e5;
+        }
+
+        .game-card-title {
+            font-size: 1.2rem;
+            font-weight: 600;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        /* Pagination */
+        .pagination {
+            text-align: center;
+            margin: 2rem 0;
+        }
+
+        .pagination a {
+            color: var(--apple-blue);
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            margin: 0 0.25rem;
+            border-radius: 8px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .pagination a:hover {
+            background-color: var(--apple-blue);
+            color: white;
+        }
+
+        .pagination a.active {
+            background-color: var(--apple-blue);
+            color: white;
+            font-weight: bold;
+        }
+        
+        /* Footer */
+        footer {
+            background-color: var(--apple-dark);
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+        }
+        
+        .footer-links {
+            margin-bottom: 1rem;
+        }
+        
+        .footer-links a {
+            color: white;
+            margin: 0 0.5rem;
+            text-decoration: none;
+        }
+        
+        .footer-links a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            .game-grid {
+                grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">Aigame.it.com</div>
+                <div class="nav-links">
+                    <a href="#" class="nav-link">Home</a>
+                    <a href="#" class="nav-link">Popular Games</a>
+                    <a href="#" class="nav-link">New Games</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+    
+    <main class="container">
+        <h1>Explore Our Games</h1>
+        
+        <!-- Search Bar -->
+        <div class="search-container">
+            <input type="text" class="search-bar" placeholder="Search games..." id="searchInput">
+        </div>
+        
+        <!-- Category Filter -->
+        <div class="category-filter">
+            <div class="category-buttons">
+                <button class="category-btn active" data-category="all">All</button>
+                <button class="category-btn" data-category="action">Action</button>
+                <button class="category-btn" data-category="adventure">Adventure</button>
+                <button class="category-btn" data-category="strategy">Strategy</button>
+                <button class="category-btn" data-category="puzzle">Puzzle</button>
+                <button class="category-btn" data-category="rpg">RPG</button>
+            </div>
+        </div>
+        
+        <!-- Game Grid -->
+        <div class="game-grid">
+            <a href="games/monster-survivors.html" class="game-card" data-category="action">
+                <img src="https://via.placeholder.com/300x180.png/1d1d1f/ffffff?text=Monster+Survivors" alt="Monster Survivors Game">
+                <h3 class="game-card-title">Monster Survivors</h3>
+            </a>
+            <a href="games/highway-traffic.html" class="game-card" data-category="driving">
+                <img src="https://via.placeholder.com/300x180.png/0071e3/ffffff?text=Highway+Traffic" alt="Highway Traffic Game">
+                <h3 class="game-card-title">Highway Traffic</h3>
+            </a>
+            <a href="games/chess.html" class="game-card" data-category="puzzle">
+                <img src="https://via.placeholder.com/300x180.png/68cc45/ffffff?text=Chess" alt="Chess Game">
+                <h3 class="game-card-title">Chess</h3>
+            </a>
+            <a href="games/solitaire.html" class="game-card" data-category="puzzle">
+                <img src="https://via.placeholder.com/300x180.png/ff9500/ffffff?text=Solitaire" alt="Solitaire Game">
+                <h3 class="game-card-title">Solitaire</h3>
+            </a>
+            <a href="games/geometry-dash.html" class="game-card" data-category="arcade">
+                <img src="https://via.placeholder.com/300x180.png/1d1d1f/ffffff?text=Geometry+Dash" alt="Geometry Dash Game">
+                <h3 class="game-card-title">Geometry Dash</h3>
+            </a>
+        </div>
+        
+        <!-- Pagination -->
+        <nav class="pagination" aria-label="Game pages navigation">
+            <a href="#" class="disabled">&laquo;</a>
+            <a href="#" class="active">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">5</a>
+            <a href="#">&raquo;</a>
+        </nav>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Contact Us</a>
+                <a href="#">About Us</a>
+            </div>
+            <p>&copy; 2025 Aigame.it.com - All rights reserved</p>
+        </div>
+    </footer>
+
+    <script>
+        // Search functionality
+        const searchInput = document.getElementById('searchInput');
+        const gameCards = document.querySelectorAll('.game-card');
+
+        searchInput.addEventListener('input', function(e) {
+            const searchTerm = e.target.value.toLowerCase();
+            
+            gameCards.forEach(card => {
+                const title = card.querySelector('.game-card-title').textContent.toLowerCase();
+                if (title.includes(searchTerm)) {
+                    card.style.display = '';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        });
+
+        // Category filtering
+        const categoryButtons = document.querySelectorAll('.category-btn');
+        
+        categoryButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                // Remove active class from all buttons
+                categoryButtons.forEach(btn => btn.classList.remove('active'));
+                // Add active class to current button
+                this.classList.add('active');
+                
+                const category = this.dataset.category;
+                
+                gameCards.forEach(card => {
+                    if (category === 'all' || card.dataset.category === category) {
+                        card.style.display = '';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

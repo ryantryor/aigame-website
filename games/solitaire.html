@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Play Solitaire online - the classic card game for all ages. Free to play on Aigame.it.com.">
+    <meta name="keywords" content="Solitaire, card game, classic, online game, free game, puzzle game">
+    <meta name="author" content="Aigame.it.com">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Solitaire - Classic Card Game | Aigame.it.com">
+    <meta property="og:description" content="Play Solitaire online for free. Enjoy the timeless card game and challenge yourself!">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://aigame.it.com/games/solitaire">
+    <title>Solitaire - Classic Card Game | Aigame.it.com</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">Aigame.it.com</div>
+                <div class="nav-links">
+                    <a href="/index.html" class="nav-link">Home</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main class="container">
+        <section class="game-intro">
+            <h1>Solitaire</h1>
+            <p class="tagline">Enjoy the timeless card game that challenges your mind and patience!</p>
+        </section>
+        <section class="game-container">
+            <iframe class="game-iframe" src="https://playpager.com/embed/solitaire/index.html" allowfullscreen width="100%" height="600" frameborder="0" scrolling="no" title="Solitaire Game"></iframe>
+        </section>
+        <section class="game-details">
+            <h2>About Solitaire</h2>
+            <p>Solitaire is a classic card game that has entertained players for generations. The goal is to move all cards to the foundation piles, following suit and sequence. It's a perfect game for relaxing and sharpening your mind.</p>
+            <h2>How to Play</h2>
+            <p>Move cards between columns to uncover hidden cards and build sequences in descending order and alternating colors. Move cards to the foundation piles to win the game!</p>
+        </section>
+        <section class="features">
+            <div class="feature-card">
+                <h3>Classic Gameplay</h3>
+                <p>Enjoy the original Solitaire experience with simple rules and endless fun.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Relaxing and Challenging</h3>
+                <p>Perfect for a quick break or a long session of strategic thinking.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Accessible to All</h3>
+                <p>Easy to learn and play, suitable for all ages.</p>
+            </div>
+        </section>
+        <section class="cta">
+            <a href="#game-container" class="cta-button">Play Now</a>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="footer-links">
+                <a href="/privacy">Privacy Policy</a>
+                <a href="/terms">Terms of Service</a>
+                <a href="/contact">Contact Us</a>
+                <a href="/about">About Us</a>
+            </div>
+            <p>&copy; 2025 Aigame.it.com - All rights reserved</p>
+        </div>
+    </footer>
+    <script>
+        // Smooth scroll to game area
+        document.querySelector('.cta-button').addEventListener('click', function(e) {
+            e.preventDefault();
+            document.querySelector('.game-container').scrollIntoView({ 
+                behavior: 'smooth' 
+            });
+        });
+    </script>
+</body>
+</html> 

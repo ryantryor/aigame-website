@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Play Geometry Dash online - a fast-paced arcade game where you jump and dodge obstacles to the beat. Free to play on Aigame.it.com.">
+    <meta name="keywords" content="Geometry Dash, arcade game, platformer, online game, free game, rhythm game">
+    <meta name="author" content="Aigame.it.com">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Geometry Dash - Fast-Paced Arcade Game | Aigame.it.com">
+    <meta property="og:description" content="Jump, dodge, and groove to the beat in Geometry Dash. Test your reflexes and timing in this addictive arcade game!">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://aigame.it.com/games/geometry-dash">
+    <title>Geometry Dash - Fast-Paced Arcade Game | Aigame.it.com</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">Aigame.it.com</div>
+                <div class="nav-links">
+                    <a href="/index.html" class="nav-link">Home</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main class="container">
+        <section class="game-intro">
+            <h1>Geometry Dash</h1>
+            <p class="tagline">Jump, dodge, and groove to the beat in this fast-paced arcade adventure!</p>
+        </section>
+        <section class="game-container">
+            <iframe class="game-iframe" src="https://www.onlinegames.io/games/2022/unity/geometry-dash-freezenova/index.html" allowfullscreen width="100%" height="600" frameborder="0" scrolling="no" title="Geometry Dash Game"></iframe>
+        </section>
+        <section class="game-details">
+            <h2>About Geometry Dash</h2>
+            <p>Geometry Dash is a fast-paced arcade platformer where you control a square and jump over obstacles to the rhythm of the music. Each level is filled with challenging jumps and hazards. Can you reach the end without crashing?</p>
+            <h2>How to Play</h2>
+            <p>Click or press the spacebar to jump. Time your jumps perfectly to avoid spikes and obstacles. The game gets faster and more challenging as you progress!</p>
+        </section>
+        <section class="features">
+            <div class="feature-card">
+                <h3>Rhythm-Based Gameplay</h3>
+                <p>Jump and dodge obstacles to the beat of catchy music.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Challenging Levels</h3>
+                <p>Test your reflexes and timing with increasingly difficult stages.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Addictive Fun</h3>
+                <p>Easy to start, hard to master. Try to beat your high score!</p>
+            </div>
+        </section>
+        <section class="cta">
+            <a href="#game-container" class="cta-button">Play Now</a>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="footer-links">
+                <a href="/privacy">Privacy Policy</a>
+                <a href="/terms">Terms of Service</a>
+                <a href="/contact">Contact Us</a>
+                <a href="/about">About Us</a>
+            </div>
+            <p>&copy; 2025 Aigame.it.com - All rights reserved</p>
+        </div>
+    </footer>
+    <script>
+        // Smooth scroll to game area
+        document.querySelector('.cta-button').addEventListener('click', function(e) {
+            e.preventDefault();
+            document.querySelector('.game-container').scrollIntoView({ 
+                behavior: 'smooth' 
+            });
+        });
+    </script>
+</body>
+</html> 
